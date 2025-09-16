@@ -25,7 +25,7 @@ h3 {
 }
 
 p {
-    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
 }
 
 header {
@@ -157,9 +157,11 @@ section img {
 
 .card img {
     width: 40%;
-    height: 6rem;
-    max-height: 6rem;
-    background-color: #130e4a;
+    padding: 0 5%;
+}
+
+.card img:nth-child(1) {
+    width: 30%;
 }
 
 .card h3 {

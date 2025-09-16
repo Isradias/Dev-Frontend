@@ -25,7 +25,7 @@ h3 {
 }
 
 p {
-    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
 }
 
 header {
@@ -110,10 +110,40 @@ section {
     background-color: azure;
     border-radius: 20px;
     width: 25%;
-    padding: 0 2% 1%;
+    padding: 0 2% 2%;
     margin: 1%;
 }
 
 .bt_contratar {
-    margin-bottom: 400px;
+    background-color: #130e4a;
+    font-size: large;
+    border-radius: 5px;
+    padding: 5px 0;
+    width: 70%;
+    align-self: center;
+}
+
+.bt_contratar a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.faq details {
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    width: 50%;
+    border-radius: 20px;
+    padding: 10px 2%;
+    margin-bottom: 1%;
+    background-color: azure;
+}
+
+.faq details ul li::marker {
+    font-size: 1.5rem;
 }
