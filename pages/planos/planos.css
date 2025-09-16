@@ -144,6 +144,10 @@ section {
     background-color: azure;
 }
 
+.faq details summary:hover {
+    cursor: pointer;
+}
+
 .faq details ul li::marker {
     font-size: 1.5rem;
 }
