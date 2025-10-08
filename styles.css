@@ -174,7 +174,10 @@ footer {
     box-sizing: border-box;
     font-family: "Urbanist", sans-serif;
     text-align: center;
-
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .interface{
@@ -184,7 +187,6 @@ footer {
 footer{
     background-color: #b7b4df;
     color: #7b75bf;
-    /* padding: 20px 0; */
 }
 
 .line-footer1 {
