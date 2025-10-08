@@ -178,9 +178,7 @@ footer {
 }
 
 .interface{
-    max-width: 12800;
-    margin: 0 auto;
-
+    width: 100%;
 }
 
 footer{
@@ -246,13 +244,13 @@ footer .line-footer1{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 30px;
   text-align: left;
   margin-top: 40px;
 }
 
 .box-line-footer {
-  max-width: 220px;
+    width: 15%;
+    box-sizing: border-box;
 }
 
 .box-line-footer h3 {
@@ -263,11 +261,12 @@ footer .line-footer1{
 }
 
 .box-line-footer a {
-  display: block;
   margin-bottom: 8px;
   color: rgb(246, 244, 244);
   text-decoration: none;
   font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .box-line-footer a:hover {
@@ -278,5 +277,26 @@ footer .line-footer1{
   text-align: center;
   margin-top: 30px;
   font-size: 14px;
-  color: rgba;
+}
+
+.btn-redes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn-redes a {
+    width: min-content;
+    font-size: 30px;
+}
+
+.link-footer {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.link-footer a {
+    width: 100%;
 }
