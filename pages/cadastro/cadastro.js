@@ -7,6 +7,21 @@ function mudarCor() {
     }
 }
 
+// Trocar para o ID ser a chave
+
+function salvarLogin() {
+    localStorage.setItem(document.getElementById("nome").value, document.getElementById("email").value)
+}
+
+function mostrar() {
+    document.getElementById("confirmacaoEmail").textContent = localStorage.getItem(document.getElementById("nome").value)
+}
+
+function apagar() {
+    document.getElementById("confirmacaoEmail").textContent = "Email"
+    localStorage.clear();
+}
+
 function verSenha(senha) {
     if (senha == 1){
         if (document.getElementById("senha1").type == "text")

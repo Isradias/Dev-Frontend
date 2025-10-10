@@ -101,10 +101,9 @@ section {
 
 section div {
     width: 40rem;
-    /* background-color: aqua; */
 }
 
-.btSolicitar_orcamento {
+.btCadastro {
     align-self: center;
     justify-self: end;
     font-size: clamp(0.8rem, 2vw, 1rem);
@@ -112,12 +111,16 @@ section div {
     border-radius: 0.4rem;
     border: none;
     background-color: #130e4a;
-    color: #f0effc;
 }
 
-.btSolicitar_orcamento:hover {
+.btCadastro:hover {
     cursor: pointer;
     scale: 1.05;
+}
+
+.btCadastro a {
+    text-decoration: none;
+    color: #f0effc;
 }
 
 section img {
