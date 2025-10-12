@@ -156,6 +156,14 @@ section img {
     border-radius: 1em;
     font-size: clamp(0.8rem, 2vw, 1rem);
     background-color: #ffffff;
+
+    /* Para a animação de fade-in */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card.mostrar {
+    opacity: 1;
 }
 
 .card img {
