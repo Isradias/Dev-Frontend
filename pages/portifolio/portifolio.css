@@ -40,7 +40,6 @@ header {
 .header_img_logo {
     max-height: 4rem;
     margin: 0 2rem;
-    /* background-color: blueviolet; */
 }
 
 .header_img_logo:hover {
@@ -53,7 +52,6 @@ header ul {
     margin: 0;
     align-items: center;
     justify-content: center;
-    /* background-color: chocolate; */
 }
 
 header ul button {

@@ -36,6 +36,68 @@ h2::before {
   display: block;
 }
 
+header {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: minmax(8rem, 1fr) 3fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: #b7b4df;
+}
+
+.header_img_logo {
+    max-height: 4rem;
+    margin: 0 2rem;
+}
+
+.header_img_logo:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+header ul {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul button {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    padding: clamp(0.3rem, 1vw, 0.6rem) clamp(0.8rem, 2vw, 1.6rem);
+    background-color: transparent;
+    border: none;
+    margin: 0;
+}
+
+header ul button:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+header ul button a {
+    text-decoration: none;
+    color: black;
+}
+
+header button {
+    width: min-content;
+    background-color: transparent;
+    border: none;
+    justify-self: end;
+    margin: 0 5%;
+}
+
+.header_img_perfil {
+    max-height: 3rem;
+    align-self: center;
+}
+
+.header_img_perfil:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
 .form {
   width: 100%;
   max-width: 32rem;

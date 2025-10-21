@@ -31,7 +31,7 @@ p {
 header {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: minmax(8rem, 1fr) 3fr 1fr;
+    grid-template-columns: minmax(8rem, 1fr) 3fr min-content 1fr;
     justify-content: center;
     align-items: center;
     background-color: #b7b4df;
@@ -40,7 +40,6 @@ header {
 .header_img_logo {
     max-height: 4rem;
     margin: 0 2rem;
-    /* background-color: blueviolet; */
 }
 
 .header_img_logo:hover {
@@ -53,7 +52,6 @@ header ul {
     margin: 0;
     align-items: center;
     justify-content: center;
-    /* background-color: chocolate; */
 }
 
 header ul button {
@@ -74,17 +72,89 @@ header ul button a {
     color: black;
 }
 
+/* Começo do botão dark mode */
+.trilho{
+
+    width: 50px;
+    height: 25px;
+    background-color: #383737;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.trilho .indicador{
+
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.trilho.dark{
+
+    background-color: #c3c3c3;
+
+}
+
+
+.trilho.dark .indicador{
+
+    left: 25px;
+    background-color: #fff;
+
+}
+
+body.dark{
+    background-color: #363636;
+    color: white;
+}
+
+header.dark{
+    background-color: #000;
+}
+
+header.dark a{
+    color: #fff;
+}
+
+header.dark .header_img_perfil{
+    filter: invert(1);
+}
+
+body.dark .servicos .cards_container .card{
+    background-color: black;
+}
+body.dark .servicos .cards_container .card img{
+    filter: invert(1);
+}
+
+body.dark footer {
+    background-color: #000;
+}
+/* Fim do botão dark mode */
+
 header button {
     width: min-content;
     background-color: transparent;
     border: none;
-    justify-self: end;
     margin: 0 5%;
+}
+
+header a {
+    width: min-content;
+    justify-self: end;
+    margin: 0 1rem;
 }
 
 .header_img_perfil {
     max-height: 3rem;
-    align-self: center;
+    justify-self: flex-end;
 }
 
 .header_img_perfil:hover {
