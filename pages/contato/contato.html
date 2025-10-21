@@ -22,28 +22,45 @@
         </div>
         <a href="../login/login.html"><img src="../../img/foto_perfil.png" alt="foto_perfil" class="header_img_perfil"></a>
     </header>
-    <h1>Formulário de Contato</h1>
-    <form
+    <section>
+      <h1>Formulário de Contato</h1>
+      <form
       action="https://formsubmit.co/israelcaldas10@gmail.com"
       method="POST"
       class="form"
-    >
-      <label for="name">Nome</label>
-      <input type="text" name="name" id="name" required />
-
-      <label for="email">E-mail</label>
-      <input type="email" name="email" id="email" required />
-
-      <label for="message">Mensagem</label>
-      <textarea name="message" id="message" required></textarea>
-
-      <input type="hidden" name="_captcha" value="false" />
-      <input
+      >
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" required />
+        
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" required />
+        
+        <label for="message">Mensagem</label>
+        <textarea name="message" id="message" required></textarea>
+        
+        <input type="hidden" name="_captcha" value="false" />
+        <input
         type="hidden"
         name="_next"
         value="https://isradias.github.io/Dev-Frontend/pages/contato/obrigado.html"
-      />
-      <button type="submit">Enviar</button>
-    </form>
+        />
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <footer>
+        <div class="interface">
+
+            <section class="line-footer1">
+
+                <h2>Quer receber notícias sobre nossos planos?</h2>
+                <p>Inscreva-se em newslatter e receba as principais notícias diretamente em seu e-mail:</p>
+                <form action="">
+                    <input type="email" name="" id="">
+                    <input type="submit" value="Cadastar">
+                </form>
+
+            </section>
+    </footer>
+    <script src="contato.js"></script>
   </body>
 </html>
