@@ -41,3 +41,13 @@ trilho.addEventListener("click", () => {
         sessionStorage.setItem('darkMode', 'false');
     }
 });
+
+// Mostrar o alerta após 5 segundos
+    setTimeout(() => {
+      document.getElementById('alerta').classList.add('mostrar');
+    }, 5000);
+
+    // Botão para fechar o alerta
+    document.getElementById('fechar').addEventListener('click', () => {
+      document.getElementById('alerta').classList.remove('mostrar');
+    })

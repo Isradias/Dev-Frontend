@@ -2,6 +2,41 @@
     box-sizing: border-box;
 }
 
+#alerta {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.8);
+      background: white;
+      border-radius: 15px;
+      padding: 25px 35px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      text-align: center;
+      opacity: 0;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+
+    #alerta.mostrar {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    #alerta button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background: #0078ff;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #alerta button:hover {
+      background: #005fd1;
+    }
+
 body {
     margin: 0;
     width: 100%;
@@ -397,4 +432,10 @@ footer .line-footer1{
 
 .link-footer a {
     width: 100%;
+}
+
+.interface img {
+    /* width: 100%; */
+    scale: 3;
+    margin-left: 30%;
 }
