@@ -27,10 +27,11 @@ header {
 .header_img_logo {
     max-height: 4rem;
     margin: 0 2rem;
+    scale: 1.7;
 }
 
 .header_img_logo:hover {
-    scale: 1.1;
+    scale: 1.9;
     cursor: pointer;
 }
 

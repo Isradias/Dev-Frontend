@@ -50,10 +50,11 @@ header {
 .header_img_logo {
     max-height: 4rem;
     margin: 0 2rem;
+    scale: 1.7;
 }
 
 .header_img_logo:hover {
-    scale: 1.1;
+    scale: 1.9;
     cursor: pointer;
 }
 
@@ -372,4 +373,93 @@ footer .line-footer1{
 
 .link-footer a {
     width: 100%;
+}
+
+/* FORMS ATUALIZADO */
+
+/* === Formulário de Contato === */
+.forms {
+  width: 50%;
+  margin: 40px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+/* === Labels === */
+.forms label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* === Inputs e Textarea === */
+.forms input[type="text"],
+.forms input[type="email"],
+.forms textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+}
+
+.forms input:focus,
+.forms textarea:focus {
+  border-color: #0077ff;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 119, 255, 0.3);
+}
+
+/* === Textarea === */
+.forms textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* === Botão === */
+.forms button {
+  display: block;
+  width: 100%;
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.forms button:hover {
+  background-color: #005fd1;
+  transform: translateY(-2px);
+}
+
+.forms button:active {
+  transform: translateY(0);
+}
+
+/* === Captcha === */
+.h-captcha {
+  margin: 20px 0;
+}
+
+/* === Responsividade === */
+@media (max-width: 600px) {
+  .forms {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
 }

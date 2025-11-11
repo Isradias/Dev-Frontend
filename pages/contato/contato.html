@@ -22,28 +22,25 @@
         </div>
         <a href="../login/login.html"><img src="../../img/foto_perfil.png" alt="foto_perfil" class="header_img_perfil"></a>
     </header>
-    <section>
+     <section class="form-section">
       <h1>Formulário de Contato</h1>
-      <form
-      action="https://formsubmit.co/israelcaldas10@gmail.com"
-      method="POST"
-      class="form"
-      >
+
+      <form action="https://api.web3forms.com/submit" method="POST" class="forms">
+        <input type="hidden" name="access_key" value="ae73f5de-5de5-4a3c-a9d3-a9d534051a9c" />
+        
         <label for="name">Nome</label>
-        <input type="text" name="name" id="name" required />
-        
+        <input type="text" id="name" name="name" required placeholder="Digite seu nome" />
+
         <label for="email">E-mail</label>
-        <input type="email" name="email" id="email" required />
-        
+        <input type="email" id="email" name="email" required placeholder="Digite seu e-mail" />
+
         <label for="message">Mensagem</label>
-        <textarea name="message" id="message" required></textarea>
-        
-        <input type="hidden" name="_captcha" value="false" />
-        <input
-        type="hidden"
-        name="_next"
-        value="https://isradias.github.io/Dev-Frontend/pages/contato/obrigado.html"
-        />
+        <textarea id="message" name="message" required placeholder="Sua mensagem"></textarea>
+
+        <div class="h-captcha" data-captcha="true"></div>
+
+        <input type="hidden" name="redirect" value="https://isradias.github.io/Dev-Frontend/" />
+
         <button type="submit">Enviar</button>
       </form>
     </section>
