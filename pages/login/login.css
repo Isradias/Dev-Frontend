@@ -392,3 +392,19 @@ footer .line-footer1{
 .link-footer a {
     width: 100%;
 }
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        max-width: 420px;
+        padding: 20px 25px;
+    }
+    .container h1 {
+        font-size: 28px;
+    }
+    .remember-forgot {
+        flex-direction: column; 
+        gap: 0.5rem;
+        font-size: 0.9rem;
+    }
+}

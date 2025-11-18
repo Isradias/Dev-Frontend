@@ -303,3 +303,14 @@ footer .line-footer1{
 .link-footer a {
     width: 100%;
 }
+
+@media (max-width: 480px) {
+    form {
+        width: 90%;
+        max-width: 400px;
+        padding: 1.5rem;
+    }
+    form div {
+        grid-template-columns: 1fr; 
+    }
+}
