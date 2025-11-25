@@ -51,3 +51,22 @@ trilho.addEventListener("click", () => {
     document.getElementById('fechar').addEventListener('click', () => {
       document.getElementById('alerta').classList.remove('mostrar');
     })
+
+    // MENU HAMBURGUER
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("menu");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("ativo");
+        menu.classList.toggle("ativo");
+    });
+
+    // Botão X fecha o alerta
+const alerta = document.getElementById("alerta");
+const botaoX = document.querySelector("#alerta .fechar");
+
+botaoX.addEventListener("click", () => {
+    alerta.classList.remove("mostrar");
+    alerta.style.opacity = "0";
+    setTimeout(() => alerta.style.display = "none", 300);
+});

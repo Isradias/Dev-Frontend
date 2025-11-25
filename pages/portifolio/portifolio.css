@@ -362,6 +362,7 @@ footer .line-footer1{
 
 @media (max-width: 768px) {
     header {
+        display: flex;
         grid-template-columns: 1fr;
         grid-auto-flow: row;
         justify-items: center;
@@ -401,5 +402,67 @@ footer .line-footer1{
     .btn-redes {
         justify-content: center;
         gap: 1rem;
+    }
+}
+
+/* Botão hamburguer */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    padding: 10px;
+}
+.hamburger div {
+    width: 28px;
+    height: 3px;
+    background: #000;
+    transition: 0.3s;
+}
+
+/* Muda cor no dark mode */
+body.dark .hamburger div {
+    background: #fff;
+}
+
+/* ANIMAÇÃO: vira X */
+.hamburger.ativo div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.ativo div:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.ativo div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Menu mobile */
+@media (max-width: 768px) {
+
+    header ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #b7b4df;
+        display: none;
+        flex-direction: column;
+        padding: 1rem 0;
+        gap: 1rem;
+        border-bottom: 2px solid rgba(0,0,0,0.1);
+    }
+
+    header ul.ativo {
+        display: flex;
+    }
+
+    body.dark header ul {
+        background: #000;
+        border-color: #333;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-left: 1rem;
     }
 }

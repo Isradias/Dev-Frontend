@@ -22,3 +22,12 @@ trilho.addEventListener("click", () => {
         sessionStorage.setItem('darkMode', 'false');
     }
 });
+
+    // MENU HAMBURGUER
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("menu");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("ativo");
+        menu.classList.toggle("ativo");
+    });
